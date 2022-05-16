@@ -1,0 +1,371 @@
+// For desktop
+
+@include for-desktop-up{
+  .footer_main{
+    padding:2rem 2rem;
+    width: 100%;
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(0, 0, 0, 0.904);
+    
+      p{
+        line-height: 2rem;
+        font-size: 1.3rem;
+        color: rgb(219, 219, 219);
+      }
+      h2{
+        font-size: 1.6rem
+      }
+  }
+
+  .cont-general-section{
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    height: auto;
+    border-bottom:1px solid rgb(109, 109, 109) ;
+    
+  }
+
+  .section-two-footer-partners{
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    gap: .5rem;
+    
+    h2{
+      width: 55%;
+    }
+  }
+ .light-item{
+   color: $color-complementary;
+ }
+  
+ .partners-cont{
+   width: auto;
+   height: auto;
+   display: flex;
+   align-items: center;
+   gap: 4.5rem;
+
+   .icon-style-footer{
+     font-size: 4rem;
+     color: white;
+     padding: .35rem;
+     border-radius: 50%;
+     
+
+     &:hover{
+      
+      
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.205);
+      transition:all .3s;
+      transform: scale(1.2);
+   }
+  }
+}
+
+.section-information-footer{
+  @include component-margin-sections;
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+  height: auto;
+
+  display:flex;
+  flex-direction: row;
+  gap: 7rem;
+
+  a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: rgb(219, 219, 219);
+    
+  }
+  .flex-colum{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+  }
+
+  
+
+}
+.footer-logo-cont{
+  @include component-margin-sections;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  
+
+    .footer-logo{
+      flex: 1;
+      font-size: 2rem;
+      font-weight: 400;
+      color: $color-primary;
+      
+    }
+    
+}
+}
+
+
+
+
+
+
+//  for tablet
+
+
+@include for-tablet{
+  .footer_main{
+    padding:1.5rem 1.5rem;
+    width: 100%;
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(0, 0, 0, 0.904);
+    
+
+
+      p{
+        line-height: 2rem;
+        font-size: 1.1rem;
+        color: rgb(219, 219, 219);
+      }
+      h2{
+        font-size: 1.3rem
+      }
+  }
+
+  .cont-general-section{
+    padding: .9rem 0 .9rem 0;
+    width: 100%;
+    height: auto;
+    
+    border-bottom:1px solid rgb(109, 109, 109) ;
+    
+  }
+
+  .section-two-footer-partners{
+    padding: .9rem 0 .9rem 0;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    gap: .4rem;
+    
+    h2{
+      width: 55%;
+    }
+  }
+ .light-item{
+   color: $color-complementary;
+ }
+  
+ .partners-cont{
+   width: auto;
+   height: auto;
+   display: flex;
+   align-items: center;
+   gap: 4.3rem;
+
+   .icon-style-footer{
+     font-size: 3.5rem;
+     color: white;
+     padding: .30rem;
+     border-radius: 50%;
+     
+
+     &:hover{
+      
+      
+      box-shadow: 0 0 5px $color-primary;
+      transition:all .3s;
+      transform: scale(1.2);
+   }
+  }
+}
+
+.section-information-footer{
+  @include component-margin-sections;
+  padding: .9rem 0 .9rem 0;
+  width: 100%;
+  height: auto;
+
+  display:flex;
+  flex-direction: row;
+  gap: 6.5rem;
+
+  a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(219, 219, 219);
+    
+  }
+  .flex-colum{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  
+
+}
+.footer-logo-cont{
+  @include component-margin-sections;
+  display: flex;
+  flex-direction: row;
+
+    .footer-logo{
+      flex: 1;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $color-primary;
+      
+    }
+}
+}
+
+
+
+
+
+//  for mobile
+
+
+@include for-mobile{
+  
+  .footer_main{
+    
+    padding:1rem 1rem;
+    width: 100%;
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.904);
+    
+
+
+      p{
+        line-height: 1.8rem;
+        font-size: .8rem;
+        color: rgb(219, 219, 219);
+      }
+      h2{
+        font-size: 1rem
+      }
+  }
+
+  .cont-general-section{
+    padding: .8rem 0 .8rem 0;
+    width: 100%;
+    height: auto;
+    
+    border-bottom:1px solid rgb(109, 109, 109) ;
+    
+  }
+
+  .section-two-footer-partners{
+    padding: .7rem 0 .7rem 0;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    gap: .4rem;
+    
+    h2{
+      text-align: center;
+      width: 100%;
+    }
+  }
+ .light-item{
+   color: $color-complementary;
+ }
+  
+ .partners-cont{
+   width: auto;
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   gap: 2rem;
+
+   .icon-style-footer{
+     
+     font-size: 4rem;
+     color: white;
+     
+     &:hover{
+       box-shadow: none;
+       transform: none;
+     }
+     
+    
+  
+  }
+}
+
+.section-information-footer{
+  @include component-margin-sections;
+  padding: 1rem 0 .5rem 0;
+  width: 100%;
+  height: auto;
+
+  display:flex;
+  gap: 2rem;
+  flex-direction: column;
+  
+
+  a{
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(219, 219, 219);
+    
+  }
+  .flex-colum{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  
+
+}
+.footer-logo-cont{
+  @include component-margin-sections;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+    .footer-logo{
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: $color-primary;
+    }
+}
+
+}

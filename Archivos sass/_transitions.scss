@@ -1,0 +1,20 @@
+//  TRANSITIONS
+
+// NAVBAR TRANSITIONS
+@include for-desktop-up{
+.header-cont-nav{
+  animation: 1s out-in-navbar-desktop-tablet 1;
+}
+}
+
+@include for-tablet{
+  .header-cont-nav{
+    animation: 1s out-in-navbar-desktop-tablet 1;
+  }
+  }
+
+  @include for-mobile{
+    .header-cont-nav{
+      animation: 1s out-in-vertical-navbar-mobile 1;
+    }
+    }

@@ -1,0 +1,31 @@
+// Icon Courses Recomended
+// Stars score
+// For Desktop up
+@include for-desktop-up {
+
+.fa-star{
+  font-size: .8rem;
+  color:#ff9735;
+}
+.fa-star-half-alt{
+  font-size: .8rem;
+  color:#ff9735;
+}
+
+}
+
+
+//  For tablet 
+
+@include for-tablet{
+
+  .fa-star{
+    font-size: .7rem;
+    color:#ff9735;
+  }
+  .fa-star-half-alt{
+    font-size: .7rem;
+    color:#ff9735;
+  }
+  
+  }

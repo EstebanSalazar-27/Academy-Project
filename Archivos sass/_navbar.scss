@@ -1,0 +1,263 @@
+
+
+@include for-desktop-up{
+  .header-cont-nav{
+      height: auto;
+      width: 100%;
+      .menu-navbar{
+         @include component-margin-bottom;
+         transition-duration: .2s;
+         padding: .5rem 3rem;
+         width: 100%;
+         height: 4.5rem; 
+         
+         
+         display: flex;
+         flex-flow: row wrap;
+         align-items: center;
+         gap: 1rem;
+         
+         box-shadow: 0 1px 4px rgba(6,6,6,.100); 
+         
+      }
+      
+
+      .nav-logo{
+        margin: 0;
+      
+        font-size: 2rem;
+        font-weight: 400;
+        color: $color-primary;
+        animation: color-transition 1s infinite;
+        animation-direction: alternate;
+      }
+
+      .item-priority-nav{
+         padding-bottom: .65rem;
+         align-self: center;
+         height: auto;
+         width: auto;
+         flex: 1;
+      }
+
+      .unordered-list-nav{
+         
+         padding:0;
+         height: auto;
+         width: auto;
+        
+         display: flex;
+         flex-flow: row nowrap ;
+         gap: 1rem;
+      }
+      
+      .menu-list-order{
+         width: auto;
+         height: auto;
+
+      }
+       .item-nav-link{
+
+            padding: .5rem .8rem;
+            font-family: 'Ubuntu', sans-serif;;
+            font-size: 1.2rem;
+
+             &:hover{
+                transition-duration: .2s;
+                border-radius: .25rem;
+                color: $color-font-links-nav-hover ;
+                background-color: $color-hover-background;
+                
+             }
+       }
+
+         .btn-icons{
+            width: auto;
+
+            display: flex;
+            align-items: center;
+            gap: 1.2em;
+            
+            .icon-general-style{
+               color: rgba(7, 7, 7, 0.800);
+               font-size: 1.3em;
+            }
+
+            .fa-user-circle{
+               font-size: 2em;
+               color: $color-secundary;
+            }
+         }
+  }
+}
+
+
+//  TABLET DESIGN
+@include for-tablet{
+ 
+   
+.header-cont-nav{  
+
+   width: 100%;
+   height: auto;
+
+   .menu-navbar{
+      @include component-margin-bottom;
+      transition-duration: .2s;
+      padding: .4rem 2rem;
+      width: 100%;
+      height: 4.5rem; 
+      
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 1rem;
+      
+      box-shadow: 0 1px 4px rgba(6,6,6,.100); 
+      
+
+   }
+
+   .nav-logo{
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: $color-primary;
+      animation: color-transition 2s infinite;
+      animation-direction: alternate;
+   }
+
+   .item-priority-nav{
+      padding-bottom: .50rem;
+      height: auto;
+      width: auto;
+      flex: 1;
+   }
+
+   .unordered-list-nav{
+      height: auto;
+      width: auto;
+      
+      display: flex;
+      flex-flow: row nowrap ;
+      gap: 1rem;
+      
+   }
+   
+   .menu-list-order{
+      width: auto;
+      height: auto;
+   }
+      .item-nav-link{
+         
+         padding: .3rem .5rem;
+         font-family: 'Ubuntu', sans-serif;;
+         font-size: .9rem;
+
+          &:hover{
+             transition-duration: .2s;
+             border-radius: .25rem;
+             color: $color-font-links-nav-hover ;
+             background-color: $color-hover-background;
+          }
+      }
+
+      .btn-icons{
+         width: auto;
+
+         display: flex;
+         align-items: center;
+         gap: 1em;
+         
+
+         .icon-general-style{
+            color: rgba(7, 7, 7, 0.800);
+            font-size: 1.1em;
+         }
+         .fa-user-circle{
+            font-size: 1.6em;
+            color: $color-secundary;
+         }
+      }
+      
+   }
+}
+
+// Mobile 
+@include for-mobile{
+   
+   .header-cont-nav{
+      
+      .menu-navbar{
+         transition-duration: .2s;
+         margin-bottom: 1rem;
+         padding:1rem 1rem;
+         width: 100%;
+         min-width: 175px;
+         height: auto; 
+         
+         display: flex;
+         flex-direction: column;
+         gap: .5rem;
+         
+         box-shadow: 0 1px 4px rgba(6,6,6,.100); 
+         
+   
+      }
+   
+      .nav-logo{ 
+         font-size: 1.5rem;
+         font-weight: 400;
+         color: $color-primary;
+         
+      }
+   
+      .item-priority-nav{
+         
+         width: 100%;  
+         display: flex;
+         flex-direction: column ;
+         height: auto;
+         text-align: center;
+         gap: .5rem;
+      }
+   
+      .unordered-list-nav{
+         padding: 0;
+         margin: 0;
+         gap: .5rem;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+        
+      }
+      
+            .menu-list-order{
+            
+            width: 100%;
+            height: auto;
+            display: flex;
+            text-align: center;
+      }
+          .item-nav-link{
+            padding: .5rem 0;
+            width: 100%;
+            font-family: 'Ubuntu', sans-serif;;
+            font-size: .9rem;
+   
+             &:hover{
+                transition-duration: .2s;
+                border-radius: .25rem;
+                color: $color-font-links-nav-hover ;
+                background-color: $color-hover-background;
+             }
+          }
+   
+            .btn-icons{
+            display: none;
+            
+            
+            
+             }
+         
+   }
+}

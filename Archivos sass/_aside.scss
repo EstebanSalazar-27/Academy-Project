@@ -1,0 +1,207 @@
+
+@include for-desktop-up{
+ .aside-cont-flex{
+  @include component-margin-sections;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  
+
+ }
+  .cont-img-background-presentation{
+    margin: 2rem 0;
+    padding: .3rem 1rem;
+    height: 30vw;
+    width: 100%;
+    background: url(../imgs/section3.jpeg) no-repeat center  ;
+    background-size: cover;
+  
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+  
+ 
+    .card-presentation{
+      padding: .6rem .6rem;
+      width: 30%;
+      height: auto;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.116);
+      background-color: rgba(255, 255, 255, 0.397);
+       
+      .name-fundador{
+        color:$color-primary;
+        font-size: 1.4rem;
+        font-family: 'Ubuntu', sans-serif;;
+        letter-spacing: 1px;
+      }
+
+        .information-fundador{
+          font-family: serif;
+          color: rgba(0, 0, 0, 0.753);
+          font-size: 1.1rem;
+          line-height: 1.6rem;
+        }
+    }
+  
+  }
+ .second-cont{
+  width: 100%;
+  height: 30vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  background: url(/imgs/funder3.jpeg) no-repeat center;
+  background-size: cover;
+ }
+
+}
+
+
+
+
+
+
+
+//  for tablet
+
+
+
+@include for-tablet{
+  .aside-cont-flex{
+   @include component-margin-sections;
+   width: 100%;
+   height: auto;
+   
+   display: flex;
+   flex-direction: column;
+   
+ 
+  }
+  .cont-img-background-presentation{
+   margin:2rem 0;
+   padding: .3rem .5rem;
+   height: 35vw;
+   width: 100%;
+   background: url(../imgs/section3.jpeg) no-repeat center  ;
+   background-size: cover;
+   
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   align-items: center;
+   
+  
+     .card-presentation{
+       padding: .4rem .4rem;
+       width: 30%;
+       height: auto;
+       box-shadow: 0 0 4px rgba(0, 0, 0, 0.116);
+       background-color: rgba(255, 255, 255, 0.397);
+ 
+       .name-fundador{
+         color:$color-primary;
+         font-size: 1rem;
+         font-family: 'Ubuntu', sans-serif;;
+         
+       }
+ 
+         .information-fundador{
+           font-family: serif;
+           color: rgba(0, 0, 0, 0.753);
+           font-size: .8rem;
+           line-height: 1rem;
+         }
+     }
+  }
+  .second-cont{
+   width: 100%;
+   height: 35vw;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+   align-content: flex-end;
+   
+   background: url(/imgs/funder3.jpeg) no-repeat left;
+   background-size: cover;
+   
+  }
+ 
+ }
+ 
+
+
+
+
+
+// for mobile
+
+@include for-mobile{
+  .aside-cont-flex{
+    @include component-margin-sections-mobile;
+   width: 100%;
+   height: auto;
+   
+   display: flex;
+   flex-direction: column;
+   
+ 
+  }
+  .cont-img-background-presentation{
+   @include component-margin-sections-mobile;
+   padding: .3rem .5rem;
+   height: 55vw;
+   width: 100%;
+   background: url(../imgs/section3.jpeg) no-repeat center  cover ;
+   background-size: cover;
+   
+   
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   align-items: center;
+   
+  
+     .card-presentation{
+       padding: .4rem .4rem;
+       width: 55%;
+       height: auto;
+       
+       
+ 
+       .name-fundador{
+         color:$color-primary;
+         font-size: .8rem;
+         font-family: 'Ubuntu', sans-serif;;
+         letter-spacing: 1px;
+       }
+ 
+         .information-fundador{
+           font-family: serif;
+           color: rgba(0, 0, 0, 0.753);
+           font-size: .7rem;
+           line-height: 1rem;
+         }
+     }
+  }
+  .second-cont{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-content: center;
+   
+   background-image: url(/imgs/funder3.jpeg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+  }
+ 
+ }

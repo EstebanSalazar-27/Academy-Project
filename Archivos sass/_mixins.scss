@@ -1,0 +1,82 @@
+// BREAKPOINTS MIXINS 
+
+@mixin for-desktop-up {
+  @media (min-width:1024px) and (max-width:2600px){
+    @content;
+    
+    
+  } 
+}
+
+
+@mixin for-tablet {
+  @media (max-width:1024px){  
+    @content;
+    
+
+  } 
+}
+
+
+@mixin for-mobile {
+  @media (max-width:768px){
+    @content;
+    
+   
+  } 
+}
+
+// Margin - Mixins
+@mixin component-margin-sections{
+  margin-bottom: 2rem;
+}
+@mixin component-margin-sections-mobile {
+  margin-bottom: 1rem;
+  
+}
+@mixin component-margin-top{
+  margin-top: 1rem;
+}
+@mixin component-margin-bottom {
+  margin-bottom: 1rem;
+  
+}
+
+
+
+// Cards recomended layout
+@mixin card-cont-course-stats-desktop {
+  position: relative;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: .9rem;
+  &:hover{
+    transition-duration:.2s;
+    transform: scale(1.1);
+  }
+   
+}
+// Mixin card cont course stats for TABLET
+
+@mixin card-cont-course-stats-tablet {
+  position: relative;
+  flex-basis: 19%;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  
+}
+
+
+//  Mixin card cont course stats for MOBILE
+@mixin card-cont-course-stats-mobile{
+  position: relative;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  &:hover{
+    transform: none;
+  }
+   
+}

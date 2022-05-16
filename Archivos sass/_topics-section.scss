@@ -1,0 +1,109 @@
+@include for-desktop-up{
+  .topic-section-colum{
+      @include component-margin-sections;
+      transition-duration: .2s;
+      width: 100%;
+      background-color: rgba(247, 247, 247, 0.192);
+      height: auto;
+      padding: 2rem 1.5rem;
+      
+      h2{
+        @include component-margin-bottom;
+        color: rgb(22, 22, 22);
+      }
+
+  }
+  .container-topic-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 90%;
+    padding: 1rem 0rem;
+    height: auto;
+    
+  }
+  .cont-topics-info{
+    transition-duration: .2s;
+    .title-topic{
+      font-family: roboto;
+      font-size:1.7rem;
+    }
+    display: flex;
+    flex-basis: 20%;
+    gap: 1.2rem;
+    
+    flex-direction: column;
+    .item-topic-category{
+      letter-spacing: 1px;
+      font-weight: 500;
+      text-decoration: underline;
+      color: rgb(143, 74, 255);
+      font-size: 1.5rem;
+      
+    }
+    cite{
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+
+
+@include for-tablet{
+  .topic-section-colum{
+    @include component-margin-sections;
+    transition-duration: .2s;
+      width: 100%;
+      background-color: rgba(247, 247, 247, 0.192);
+      height: auto;
+      padding: 1rem 1.5rem;
+      
+      h2{
+        @include component-margin-bottom;
+        color: rgb(22, 22, 22);
+      }
+
+  }
+  .container-topic-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 90%;
+    padding: 1rem 0rem;
+    height: auto;
+    
+  }
+  .cont-topics-info{
+    transition-duration: .2s;
+    .title-topic{
+      font-family: roboto;
+      font-size:1.4rem;
+    }
+    display: flex;
+    flex-basis: 20%;
+    gap: 1.2rem;
+    
+    flex-direction: column;
+    .item-topic-category{
+      letter-spacing: 1px;
+      font-weight: 500;
+      text-decoration: underline;
+      color: rgb(143, 74, 255);
+      font-size: 1.2rem;
+      
+    }
+    cite{
+      font-size: 1rem;
+    }
+  }
+}
+
+
+// for mobile
+
+@include for-mobile{
+  .topic-section-colum{
+     display: none;
+  }
+}  
